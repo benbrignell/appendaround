@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" >
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Append Around demo</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+	<h1>appendAround demo</h1>
+	<h4>Swap elements on the page</h4>
+	<p class="intro">Resize your browser to see the demo</p>
+</header>
+	<!-- potential container for appendAround -->
+  <div class="aa-large" data-set="swapme"></div>
+		<p><strong>First</strong> item</p>
+
+
+  <!-- initial container for appendAround -->
+ 	<div class="aa-small" data-set="swapme">
+		<p class="swap"><strong>Second</strong> item</p>
+	</div>
+
+	<footer>
+		<p>
+		<p><a href="https://github.com/filamentgroup/AppendAround">AppendAround on github</a></p>
+		<p><a href="https://twitter.com/benbrignell">Demo by Ben Brignell</a></p>
+	</footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/appendAround.js"></script>
+
+	<script type="text/javascript">
+	    $( ".swap" ).appendAround();
+	</script>
+</body>
+</html>
